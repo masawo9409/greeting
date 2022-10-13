@@ -34,8 +34,6 @@ class greetApp extends Controller
     {
         $randam_message = array("おはよう", "こんにちは", "こんばんは", "おやすみ");
         $randam_keys = array_rand($randam_message);
-        // $random = $randam_message[$random_keys[0]];
-        // $random = srand($random);
         $randam = $randam_message[$randam_keys];
         return view('message.randam', ['msg' => $randam]);
     }
